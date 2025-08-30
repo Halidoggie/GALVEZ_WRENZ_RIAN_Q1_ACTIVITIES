@@ -1,0 +1,299 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BASIC EDUCATION ENROLLMENT FORM</title>
+</head>
+<body>
+  <h1>BASIC EDUCATION ENROLLMENT FORM</h1>
+  <p><strong>THIS FORM IS NOT FOR SALE.</strong></p>
+
+  <form>
+    <table>
+      <tr>
+        <td>School Year:</td>
+        <td><input name="school_year" type="text" placeholder="School Year"></td>
+        <td>Grade level to Enroll:</td>
+        <td><input name="grade_level" type="text" placeholder="Grade level to Enroll"></td>
+      </tr>
+    </table>
+
+    <fieldset>
+      <legend>check the appropriate box only</legend>
+      <ol>
+        <li>
+          With LRN:
+          <input type="radio" name="with_lrn" value="yes"> Yes
+          <input type="radio" name="with_lrn" value="no"> No
+        </li>
+        <li>
+          Returning (Balik-Aral):
+          <input type="radio" name="returning" value="yes"> Yes
+          <input type="radio" name="returning" value="no"> No
+        </li>
+      </ol>
+    </fieldset>
+
+    <h3>INSTRUCTIONS:</h3>
+    <p>Print legibly all information required in CAPITAL letters. Submit accomplished form to the Person-in-Charge/Registrar/Class Adviser. Use black or blue pen only.</p>
+
+    <fieldset>
+      <legend>LEARNER INFORMATION</legend>
+
+      <table>
+        <tr>
+          <td>PSA Birth Certificate No. (if available upon registration)</td>
+          <td><input name="psa_no" type="text" placeholder="Birth Certificate No"></td>
+        </tr>
+        <tr>
+          <td>(LRN)Last Name</td>
+          <td><input name="lrn_last" type="text" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td><input name="first_name" type="text" placeholder="First Name"></td>
+        </tr>
+        <tr>
+          <td>Middle Name</td>
+          <td><input name="middle_name" type="text" placeholder="Middle Name"></td>
+        </tr>
+        <tr>
+          <td>Extension Name e.g. Jr., Sr., III (if applicable)</td>
+          <td><input name="ext_name" type="text" placeholder="Extension Name"></td>
+        </tr>
+        <tr>
+          <td>Learner Number</td>
+          <td><input name="learner_number" type="text" placeholder="Learner Number"></td>
+        </tr>
+        <tr>
+          <td>Birth</td>
+          <td><input name="birth_date" type="date"></td>
+        </tr>
+        <tr>
+          <td>Sex</td>
+          <td>
+            <select name="sex">
+              <option value="">--Select--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input name="age" type="number" min="1" max="120" placeholder="Age"></td>
+        </tr>
+        <tr>
+          <td>Place of Birth</td>
+          <td><input name="place_of_birth" type="text" placeholder="Place of Birth"></td>
+        </tr>
+        <tr>
+          <td>Mother Tongue</td>
+          <td><input name="mother_tongue" type="text" placeholder="Mother Tongue"></td>
+        </tr>
+        <tr>
+          <td>Belonging to any Indigenous Peoples (IP) Community/Indigenous Cultural Community</td>
+          <td>
+            <input type="radio" name="ip_belong" value="yes"> Yes
+            <input type="radio" name="ip_belong" value="no"> No<br>
+            If yes, please specify:
+            <input name="ip_specify" type="text" placeholder="Indigenous Community">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Clear">
+  </form>
+
+
+<!-- 4Ps Beneficiary -->
+<p>Is your family a beneficiary of 4Ps?</p>
+<input type="radio" name="beneficiary_4ps" value="yes"> Yes
+<input type="radio" name="beneficiary_4ps" value="no"> No
+
+<!-- Learner with Disability -->
+<p><strong>Is the child a Learner with Disability?</strong></p>
+<input type="radio" name="learner_disability" value="yes"> Yes
+<input type="radio" name="learner_disability" value="no"> No
+
+<p>If yes, specify the type of Disability:</p>
+<input type="checkbox" name="disability" value="Visual Impairment"> Visual Impairment
+<input type="checkbox" name="disability" value="Hearing Impairment"> Hearing Impairment
+<input type="checkbox" name="disability" value="Learning Disability"> Learning Disability
+<input type="checkbox" name="disability" value="Intellectual Disability"> Intellectual Disability<br>
+
+<input type="checkbox" name="disability" value="a. Disability"> a. Disability
+<input type="checkbox" name="disability" value="Autism Spectrum Disorder"> Autism Spectrum Disorder
+<input type="checkbox" name="disability" value="Emotional Behavior Disorder"> Emotional Behavior Disorder
+<input type="checkbox" name="disability" value="Orthopedic/Physical Handicap"> Orthopedic/Physical Handicap<br>
+
+<input type="checkbox" name="disability" value="b. Low Vision"> b. Low Vision
+<input type="checkbox" name="disability" value="Speech/Language Disorder"> Speech/Language Disorder
+<input type="checkbox" name="disability" value="Cerebral Palsy"> Cerebral Palsy
+<input type="checkbox" name="disability" value="Special Health Problem/Chronic Disease"> Special Health Problem/Chronic Disease<br>
+
+<input type="checkbox" name="disability" value="Multiple Disorder"> Multiple Disorder
+<input type="checkbox" name="disability" value="a. Cancer"> a. Cancer
+
+<!-- Current Address -->
+<h3>Current Address</h3>
+<table>
+  <tr>
+    <td>House No.</td>
+    <td><input type="text"></td>
+    <td>Sitio/Street Name</td>
+    <td><input type="text"></td>
+    <td>Barangay</td>
+    <td><input type="text"></td>
+    <td>Zip Code</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Municipality/City</td>
+    <td><input type="text"></td>
+    <td>Province</td>
+    <td><input type="text"></td>
+    <td>Country</td>
+    <td><input type="text"></td>
+  </tr>
+</table>
+
+<!-- Permanent Address -->
+<h3>PERMANENT ADDRESS</h3>
+<p>Same as Current Address:
+<input type="radio" name="same_address" value="yes"> Yes
+<input type="radio" name="same_address" value="no"> No
+</p>
+<table>
+  <tr>
+    <td>House No.</td>
+    <td><input type="text"></td>
+    <td>Street Name</td>
+    <td><input type="text"></td>
+    <td>Barangay</td>
+    <td><input type="text"></td>
+    <td>Zip Code</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Municipality/City</td>
+    <td><input type="text"></td>
+    <td>Province</td>
+    <td><input type="text"></td>
+    <td>Country</td>
+    <td><input type="text"></td>
+  </tr>
+</table>
+
+<!-- Parent's/Guardian's Information -->
+<h3>PARENT'S/GUARDIAN'S INFORMATION</h3>
+<table>
+  <tr>
+    <td>Father's Name</td>
+    <td><input type="text" placeholder="Last Name"></td>
+    <td><input type="text" placeholder="First Name"></td>
+    <td><input type="text" placeholder="Middle Name"></td>
+    <td><input type="text" placeholder="Contact Number"></td>
+  </tr>
+  <tr>
+    <td>Mother's Name</td>
+    <td><input type="text" placeholder="Last Name"></td>
+    <td><input type="text" placeholder="First Name"></td>
+    <td><input type="text" placeholder="Middle Name"></td>
+    <td><input type="text" placeholder="Contact Number"></td>
+  </tr>
+  <tr>
+    <td>Legal Guardian's Name</td>
+    <td><input type="text" placeholder="Last Name"></td>
+    <td><input type="text" placeholder="First Name"></td>
+    <td><input type="text" placeholder="Middle Name"></td>
+    <td><input type="text" placeholder="Contact Number"></td>
+  </tr>
+</table>
+
+<fieldset>
+  <legend>PARENT'S/GUARDIAN'S INFORMATION</legend>
+  <table>
+    <tr>
+      <td>Father's Name</td>
+      <td><input type="text" placeholder="Last Name"></td>
+      <td><input type="text" placeholder="First Name"></td>
+      <td><input type="text" placeholder="Middle Name"></td>
+      <td><input type="text" placeholder="Contact Number"></td>
+    </tr>
+    <tr>
+      <td>Mother's Name</td>
+      <td><input type="text" placeholder="Last Name"></td>
+      <td><input type="text" placeholder="First Name"></td>
+      <td><input type="text" placeholder="Middle Name"></td>
+      <td><input type="text" placeholder="Contact Number"></td>
+    </tr>
+    <tr>
+      <td>Legal Guardian's Name</td>
+      <td><input type="text" placeholder="Last Name"></td>
+      <td><input type="text" placeholder="First Name"></td>
+      <td><input type="text" placeholder="Middle Name"></td>
+      <td><input type="text" placeholder="Contact Number"></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>For Returning Learner (Balik-Aral) and Those Who Will Transfer/Move In</legend>
+  <table>
+    <tr>
+      <td>Last Grade Level Completed</td>
+      <td><input type="text" placeholder="Last Grade Level Completed"></td>
+      <td>Last School Year Completed</td>
+      <td><input type="text" placeholder="Last School Year Completed"></td>
+    </tr>
+    <tr>
+      <td>Last School Attended</td>
+      <td><input type="text" placeholder="Last School Attended"></td>
+      <td>School ID</td>
+      <td><input type="text" placeholder="School ID"></td>
+    </tr>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>For Learners in Senior High School</legend>
+  <p>
+    Semester:
+    <input type="radio" name="semester" value="1st"> 1st
+    <input type="radio" name="semester" value="2nd"> 2nd
+  </p>
+  <p>
+    Track: <input type="text" placeholder="Track">
+    Strand: <input type="text" placeholder="Strand">
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>If school will implement other distance learning modalities aside from face-to-face instruction, what would you prefer for your child?</legend>
+  <p>Choose all that apply:</p>
+  <input type="checkbox" name="modality" value="ModularPrint"> Modular (Print)<br>
+  <input type="checkbox" name="modality" value="Online"> Online<br>
+  <input type="checkbox" name="modality" value="Radio"> Radio-Based Instruction<br>
+  <input type="checkbox" name="modality" value="Blended"> Blended<br>
+  <input type="checkbox" name="modality" value="ModularDigital"> Modular (Digital)<br>
+  <input type="checkbox" name="modality" value="TV"> Educational Television<br>
+  <input type="checkbox" name="modality" value="HomeSchooling"> Home Schooling<br>
+</fieldset>
+
+<p>
+  I hereby certify that the above information given are true and correct to the best of my knowledge and I allow the Department of Education to use my child's details to create and/or update his/her learner profile in the Learner Information System. The information herein shall be treated as confidential in compliance with the Data Privacy Act of 2012.
+</p>
+
+<p>
+  Signature Over Printed Name of Parent/Guardian:
+  <input type="text" placeholder="Signature and Name">
+</p>
+<p>
+  Date: <input type="date">
+</p>     
+</body>
+</html>
